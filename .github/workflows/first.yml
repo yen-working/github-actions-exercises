@@ -7,12 +7,13 @@ jobs:
     steps:
       - name: step one
         uses: actions/checkout@v2
+
       - name: step two
         run: env | sort		
   second-job:
     name: second job 	
     runs-on: windows-latest	
-    steps:          	
+    steps:
       - name: step one
         uses: actions/checkout@v2
 	
