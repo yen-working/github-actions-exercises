@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Prints date
 	run: |
           now=$(date)
@@ -17,7 +16,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Prints date
 	run: "Get-Date"
   
@@ -26,7 +24,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Prints date
 	run: |
           now=$(date)
@@ -37,7 +34,6 @@ jobs:
     needs: [first-job, second-job, third-job]
     steps:
       - uses: actions/checkout@v4
-
       - name: Prints date
 	run: |
           now=$(date)
